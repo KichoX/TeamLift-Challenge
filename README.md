@@ -91,7 +91,7 @@ AI tools have had a positive impact on productivity, even though I couldn't dire
 
 ## 🚀 Conclusion
 
-Summing up, this challenge helped me understand and apply key concepts related to **API development, AI tool integration, and recruitment automation**. Through both theoretical analysis and practical implementation, I explored how technology enhances efficiency across different domains.
+Summing up, this challenge helped me understand key concepts related to **AI tool integration, and recruitment automation**. Through both Technical and Creative part, I explored how technology enhances efficiency across different domains.
 
 Looking forward to further discussions and feedback!
 
