@@ -24,12 +24,17 @@ ER diagrams consist of **entities**, **attributes**, and **relationships**. The 
 
 ## 🔌 API Endpoints
 
-#### Create a New Skill
-```http
-POST /managers/{id}/skill/{skillName}
+### **Creating a New Skill**
+#### **Request**
 ```
--Creates a new skill for the specified manager.
-
+POST /managers/{id}/skills
+```
+#### **Request Body**
+```json
+{
+  "name": "Java Programming"
+}
+```
 #### **Response (200 OK)**
 ```json
 {
@@ -42,12 +47,19 @@ POST /managers/{id}/skill/{skillName}
 }
 ```
 
-#### Verify an Employee's Skill
-```http
+---
+
+### **Verifying an Employee's Skill**
+#### **Request**
+```
 POST /managers/{id}/employees/{employeeId}/skills/{skillId}/verify
 ```
--Verifies an employee's skill under a manager's supervision.
-
+#### **Request Body**
+```json
+{
+  "skills_wallet_id": 456
+}
+```
 #### **Response (200 OK)**
 ```json
 {
