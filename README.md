@@ -30,6 +30,17 @@ POST /managers/{id}/skill/{skillName}
 ```
 -Creates a new skill for the specified manager.
 
+#### **Response (200 OK)**
+```json
+{
+  "message": "Skill created successfully.",
+  "skill": {
+    "skill_id": 123,
+    "name": "Java Programming",
+    "manager_id": 1
+  }
+}
+```
 
 #### Verify an Employee's Skill
 ```http
@@ -37,6 +48,19 @@ POST /managers/{id}/employees/{employeeId}/skills/{skillId}/verify
 ```
 -Verifies an employee's skill under a manager's supervision.
 
+#### **Response (200 OK)**
+```json
+{
+  "message": "Skill verified successfully.",
+  "skills_wallet": {
+    "skills_wallet_id": 456,
+    "employee_id": 45,
+    "skill_id": 123,
+    "manager_id": 1,
+    "verified": true
+  }
+}
+```
 
 #### Retrieve All Skills in an Employee's Skill Wallet
 ```http
