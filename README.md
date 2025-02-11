@@ -27,7 +27,7 @@ ER diagrams consist of **entities**, **attributes**, and **relationships**. The 
 ### **Creating a New Skill**
 #### **Request**
 ```
-POST /managers/{id}/skills
+POST /managers/skills/addSkill
 ```
 #### **Request Body**
 ```json
@@ -52,14 +52,18 @@ POST /managers/{id}/skills
 ### **Verifying an Employee's Skill**
 #### **Request**
 ```
-POST /managers/{id}/employees/{employeeId}/skills/{skillId}/verify
+POST /managers/skills/verifySkill
 ```
 #### **Request Body**
 ```json
 {
+  "manager_Id": 1
   "skills_wallet_id": 456
+  "skill_id": 123
+  "verified": true
 }
 ```
+
 #### **Response (200 OK)**
 ```json
 {
